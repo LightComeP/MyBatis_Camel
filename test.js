@@ -1,0 +1,1 @@
+document.getElementById('ibx_gubun').style['background-color'] = 'red'
