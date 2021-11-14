@@ -1,5 +1,22 @@
 {
-  "devDependencies": {
-    "typescript": "^4.4.4"
+  "name": "mybatis_camel",
+  "version": "1.0.0",
+  "description": "Light_come",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LightComeP/MyBatis_Camel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LightComeP/MyBatis_Camel/issues"
+  },
+  "homepage": "https://github.com/LightComeP/MyBatis_Camel#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
   }
 }

@@ -1,0 +1,73 @@
+<div id = 'logo'></div>
+<table border="1">
+  <tr id='row1'>
+    <th class='col1'>
+      <select id="sbx_fromCompireType">
+        <option value = 'snakeCase'>snakeCase</option>
+        <option value = 'camelCase'>camelCase</option>
+        <option value = 'kebabCase'>kebabCase</option>
+        <option value = 'pascalCase'>pascalCase</option>
+      </select>
+      <span>     ->     </span>
+      <select id="sbx_toCompireType">
+        <option value = 'camelCase'>camelCase</option>
+        <option value = 'snakeCase'>snakeCase</option>
+        <option value = 'kebabCase'>kebabCase</option>
+        <option value = 'pascalCase'>pascalCase</option>
+      </select>
+       
+
+    </th>
+    <th colspan='2' class= 'col2' >
+      <p>Camel v0.001 </p>
+      <div data-info = '일좀 주세요.'>
+        made by : LightCome</br>
+        Inquiry : 01071008724
+      </div>
+    </th>
+  </tr>
+  <tr id='row2'>
+    <td class='col1'>
+      <input type='radio' name='rdo_parsingType' value='basic' id='rdo_parsingType1'> 
+      <label for='rdo_parsingType1'>basic</label>
+      <input type='radio' name='rdo_parsingType' value='select' id='rdo_parsingType2'>
+      <label for='rdo_parsingType2'>select</label>
+      <input type='radio' name='rdo_parsingType' value='insert' id='rdo_parsingType3'>
+      <label for='rdo_parsingType3'>insert</label> 
+      <input type='radio' name='rdo_parsingType' value='update' id='rdo_parsingType4'>
+      <label for='rdo_parsingType4'>update</label>
+      <input type='radio' name='rdo_parsingType' value='delete' id='rdo_parsingType5'>
+      <label for='rdo_parsingType5'>delete</label>
+      <!--<input type='radio' name='rdo_parsingType' value='dataSet' id='rdo_parsingType6'>
+      <label for='rdo_parsingType5'>dataSet</label>-->
+    </td>
+    <td class='col2'> 
+      <p>컬럼</p>
+    </td>
+    <td class='col3'>
+      컬럼 코멘드
+    </td>
+    
+  </tr>
+  <tr id='row3'>
+    <th> 
+      <input id='ibx_gubun' type='text'value=' ' placeholder='구분자'>
+      <br/>
+      <p>구분자( default : ' ' ) ex) '\n', '#', '&'</p> 
+      <br/>
+      <input id='ibx_tableName' type='text'value='TABLE_NAME' placeholder='TABLE_NAME'>
+      
+    </th>
+    <td>
+      <textArea id='ta_col' onfocusout='fTextCamelCaseparsing()' spellcheck = "false">WORK_REQ_CD WORK_REQ_NM</textArea>
+    </td>
+    <td>      
+      <textArea id='ta_colCommand' onfocusout='fTextCamelCaseparsing()' spellcheck = "false">컬럼명1 컬럼명2</textArea>
+    </td>
+  </tr>
+  <tr id='row4'>
+    <th colspan=3>
+      <textArea id='resultDiv' spellcheck = "false"></textArea> 
+    </th> 
+  </tr>
+</table>
