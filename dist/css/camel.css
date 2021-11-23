@@ -1,0 +1,114 @@
+#logo {
+  position: absolute;
+  height: 150px;
+  width: 200px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-image: url("https://cdn.jsdelivr.net/gh/LightComeP/MyBatis_Camel/src/img/logo_Light-Come(Horizontal).png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  z-index: -5;
+  text-align: right;
+  vertical-align: bottom;
+}
+
+table td, table th {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #aab2bd;
+  border-radius: 10px;
+}
+
+table #row1 {
+  height: 5vh;
+}
+
+table #row1 .col1 {
+  border-radius: 16px;
+  width: 400px;
+}
+
+table #row1 .col1 select {
+  height: 25px;
+}
+
+table #row1 .col2 {
+  position: relative;
+}
+
+table #row1 .col2 p {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+table #row1 .col2 div {
+  text-align: right;
+  opacity: 0.4;
+}
+
+table #row2 {
+  height: 5vh;
+}
+
+table #row2 .col1 {
+  --text-align: center;
+}
+
+table #row2 .col1 input[type=radio] {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+table #row2 .col1 label {
+  font-size: 15px;
+}
+
+table #row2 .col1 input[type=radio]:checked + label {
+  color: blue;
+}
+
+table #row2 .col2, table #row2 .col3 {
+  text-align: center;
+}
+
+table #row3 {
+  height: 25vh;
+}
+
+table #row3 textArea {
+  height: 25vh;
+}
+
+table #row3 input {
+  background-color: white;
+  text-align: center;
+  width: 150px;
+}
+
+table #row3 #ibx_gubun {
+  -webkit-text-decoration: underline dotted green;
+          text-decoration: underline dotted green;
+}
+
+table #row4 {
+  height: 75vh;
+}
+
+table #row4 textArea {
+  height: 75vh;
+}
+
+textarea {
+  resize: none;
+}
+
+#resultDiv {
+  font-family: 'Courier New', monospace;
+}
+/*# sourceMappingURL=camel.css.map */
