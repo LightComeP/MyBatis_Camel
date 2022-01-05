@@ -9,14 +9,19 @@ common.getComf('ta_col').value = 'WORK_REQ_LIST WORK_SET_DATE WORK_REQ_DTTM'
 
 //////////////////// 데이터 파싱 시작
 fTextCamelCaseparsing = async function() { // 데이터 파싱
-  /////////////선언부
-  let tableName     = common.getComf('ibx_tableName').value;
-	var colText 		  = common.getComf('ta_col').value;           //컬럼 값
-	var colCmText 		= common.getComf('ta_colCommand').value;  //컬럼 코멘드 값
-  var gubunText 		= common.getComf('ibx_gubun').value;      //구분자 값
-	var objresultDiv 	= common.getComf('resultDiv');            //결과 textArea Ele
-	var maxLength		  = 0;
-
+	/////////////선언부
+	let tableName     		= common.getComf('ibx_tableName').value;
+	var colText 			= common.getComf('ta_col').value;           //컬럼 값
+	var colCmText 			= common.getComf('ta_colCommand').value;  //컬럼 코멘드 값
+	var gubunText 			= common.getComf('ibx_gubun').value;      //구분자 값
+	var objresultDiv 		= common.getComf('resultDiv');            //결과 textArea Ele
+	var maxLength		  	= 0;
+	debugger;
+	if(gubunText == "\\n"){
+		gubunText = "\n";
+	}else if(gubunText == "\\t"){
+		gubunText = "\t";
+	}
   const RESULT_DIV_INIT_SIZE = objresultDiv.parentNode.offsetHeight+'px'; // 결과 div와 textArea의 동적 높이 관리 위한 상수
 
   var colArr 		= colText.split(gubunText);             //컬럼 배열
